@@ -36,9 +36,9 @@
     <key>scrolling</key>
     <false/>
     <key>accessibility-description</key>
-    <string>Inadco ADP Test -- iPhone</string>
+    <string>ADP -- iPhone</string>
     <key>name</key>
-    <string>Inadco ADP Test -- iPhone</string>
+    <string>ADP -- iPhone</string>
     <key>external-domains</key>
     <array>
       <string>inadco.com</string>

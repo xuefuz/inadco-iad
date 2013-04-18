@@ -28,9 +28,9 @@
     <key>scrolling</key>
     <false/>
     <key>accessibility-description</key>
-    <string>Form Proxy Test</string>
+    <string>ADP -- iPad</string>
     <key>name</key>
-    <string>Inadco ADP Test -- iPad</string>
+    <string>ADP -- iPad</string>
     <key>external-domains</key>
     <array>
       <string>inadco.com</string>
@@ -58,8 +58,6 @@
         <true/>
         <key>creative-type</key>
         <string>standard</string>
-        <key>transition-type</key>
-        <string>fade</string>
         <key>supported-devices</key>
         <array>
           <string>iPad</string>
