@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=640">
+    <script type="text/javascript" src="iAd/iAd.js">
+    </script>
+    <script type="text/javascript" src="iAd/iAd-Analytics.js">
+    </script>
+    <!--script type="text/javascript">
+      function onPageShow() {
+          alert( "page is shown" );
+          document.getElementById("content").innerHTML = "Page is in focus!";
+      }
+      function onPageHide() {
+          alert( "page is hidden" );
+          document.getElementById("content").innerHTML = "";
+      }
+    </script-->
+  </head>
+  <body onpageshow="onPageShow();" onpagehide="onPageHide();">
+
+<!-- Content of the 2nd page - start -->
+    <div id="content">
+        <!--img src="assets/adp.jpg"-->
+    </div>
+
+<h1>To make a booking, call <a href="tel:+13174562564">317-456-2564</a></h1>
+<p>
+<h1><a href="https://itunes.apple.com/us/app/modcloth/id595856719?mt=8">Download for FREE</a></h1>
+<h1><a href="itms-apps://itunes.com/apps/modcloth">Download for FREE</a></h1>
+
+<!-- Content of the 2nd page - end -->
+
+  <script type="text/javascript">
+      //var isIPhone = (navigator.userAgent.indexOf("iPhone") != -1);
+      // Check if this is an iPhone 5
+      var isIphone5 = ( screen.height > 500 ) ? true : false;
+      var ppid = "";
+      if( isIphone5 ) {
+          // ppid for iPhone 5
+          //alert( "wow, iPhone 5" );
+          ppid = "D41D8C35B9A887FF8C13C69FB54F6F0A";
+      } else {
+          // ppid for iPhone 4
+          //alert( "ohoh, iPhone 4" );
+          ppid = "D41D8C35B9A887FF8C13C69FB54F6F0A";
+      }
+
+      var url = "http://cdn.inad.co/tc.html#ppid=" + ppid; 
+      var sessionId = "";
+
+      if( window.ad && window.ad.bannerParameters["sessionid"] ) {
+          sessionId = window.ad.bannerParameters["sessionid"];
+          url += "&" + sessionId;
+      } else {
+          sessionId = "SESSIONID-NOT-IN-BANNER-PARAMS";
+      }
+
+      iAd.Analytics.log( { analyticsSectionId : "Intro", 
+                           analyticsObjectId : "Start",
+                           analyticsType : "view",
+                           analyticsName : "screen update",
+                           session : sessionId } );
+      window.location = url;
+
+      setTimeout( function() {
+      if( isIphone5 ) {
+          document.getElementById("content").innerHTML = "<img src='assets/adp.jpg'>";
+      } else {
+         document.getElementById("content").innerHTML = "<span style='color:#ffffff'><h1>iPhone 4</h1></span>";
+      } }, 1 );
+  </script>
+
+  </body>
+</html>
+

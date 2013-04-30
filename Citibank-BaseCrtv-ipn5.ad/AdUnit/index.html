@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=640">
+    <script type="text/javascript" src="iAd/iAd-Analytics.js">
+    </script>
+  </head>
+  <body>
+
+<!-- Content of the 2nd page - start -->
+
+  <img src="assets/adv.jpg">
+
+<!-- Content of the 2nd page - end -->
+
+  <script type="text/javascript">
+    var url = "http://cdn.inad.co/tc.html#ppid=D41D8C3FD96A78330EF7905C11A06770"; 
+    var sessionId = "SESSIONID-NOT-IN-BANNER-PARAMS";
+
+    if( window.ad && window.ad.bannerParameters["sessionid"] ) {
+        sessionId = window.ad.bannerParameters["sessionid"];
+        url += "&session=" + sessionId; 
+    }
+
+    iAd.Analytics.log( { analyticsSectionId: "Intro", 
+                         analyticsObjectId: "Start",
+                         analyticsType: "view",
+                         analyticsName: "screen update",
+                         session: sessionId } );
+    window.location = url;
+  </script>
+
+  </body>
+</html>
+

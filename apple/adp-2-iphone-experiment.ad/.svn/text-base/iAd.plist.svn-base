@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- section: plist version -->
+  <key>version</key>
+  <string>3.0</string>
+  <!-- section: adunit w/o change -->
+  <key>background-color</key>
+  <string>ffffff</string>
+  <key>scrolling</key>
+  <true/>
+  <key>name</key>
+  <string>Whitelist Ad</string>
+  <key>accessibility-description</key>
+  <string>Whitelist Ad</string>
+  <key>action</key>
+  <string>landing-page</string>
+  <key>ad-type</key>
+  <string>rich</string>
+  <key>supported-devices</key>
+  <array>
+    <string>iPhone</string>
+    <string>iPod</string>
+    <string>iPad</string>
+  </array>
+
+  <key>external-domains</key>
+  <array>
+    <string>macys.com</string>
+    <string>nytimes.com</string>
+    <string>developer.apple.com</string>
+  </array>
+
+  <key>exit-dialog-title</key>
+  <string>c_Leaving My iAd</string>
+  <key>exit-dialog-message</key>
+  <string>c_You are about to leave</string>
+  <key>exit-dialog-continue-button</key>
+  <string>c_Yes</string>
+  <key>exit-dialog-cancel-button</key>
+  <string>c_No</string>
+
+  <!-- section: differentiated setup for iOS devices. -->
+  <key>initial-orientation</key>
+  <dict>
+    <key>iPhone</key>
+    <string>portrait</string>
+    <key>iPod</key>
+    <string>portrait</string>
+    <key>iPad</key>
+    <string>portrait</string>
+  </dict>
+  <key>supported-orientations</key>
+  <dict>
+    <key>iPhone</key>
+    <string>all</string>
+    <key>iPod</key>
+    <string>all</string>
+    <key>iPad</key>
+    <string>all</string>
+  </dict>
+
+  <!-- section: required list of supported devices are iOS devices. -->
+  <key>manifests</key>
+  <dict>
+    <key>iPhone@2x</key>
+    <string>WebArchive.manifest</string>
+    <key>iPhone</key>
+    <string>WebArchive.manifest</string>
+    <key>iPod@2x</key>
+    <string>WebArchive.manifest</string>
+    <key>iPod</key>
+    <string>WebArchive.manifest</string>
+    <key>iPad@2x</key>
+    <string>WebArchive.manifest</string>
+    <key>iPad</key>
+    <string>WebArchive.manifest</string>
+  </dict>
+
+  <!-- section: creatives. -->
+  <key>creatives</key>
+  <dict>
+    <key>basic</key>
+    <dict>
+      <key>enable-apple-branding</key>
+      <true/>
+      <key>creative-type</key>
+      <string>standard</string>
+      <key>supported-devices</key>
+      <array>
+        <string>iPhone</string>
+        <string>iPod</string>
+      </array>
+    </dict>
+    <key>basic_ipad</key>
+    <dict>
+      <key>enable-apple-branding</key>
+      <true/>
+      <key>creative-type</key>
+      <string>standard</string>
+      <key>supported-devices</key>
+      <array>
+        <string>iPad</string>
+      </array>
+    </dict>
+  </dict>
+</dict>
+</plist>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>version</key>
+    <string>3.0</string>
+    <key>content-scalable</key>
+    <true/>
+    <key>require-session-id</key> 
+    <true/>
+    <key>ad-type</key>
+    <string>rich</string>
+    <key>background-color</key>
+    <string>333333</string>
+    <key>action</key>
+    <string>landing-page</string>
+    <!-- section: differentiated setup for iOS devices. -->
+    <key>initial-orientation</key>
+    <dict>
+      <key>iPhone</key>
+      <string>portrait</string>
+      <key>iPod</key>
+      <string>portrait</string>
+      <key>iPad</key>
+      <string>portrait</string>
+    </dict>
+    <key>supported-orientations</key>
+    <dict>
+      <key>iPhone</key>
+      <string>portrait</string>
+      <key>iPod</key>
+      <string>portrait</string>
+      <key>iPad</key>
+      <string>portrait</string>
+    </dict>
+    <key>scrolling</key>
+    <false/>
+    <key>accessibility-description</key>
+    <string>QuickLoan-BaseCrtv-ipn4</string>
+    <key>name</key>
+    <string>QuickLoan-BaseCrtv-ipn4</string>
+    <key>external-domains</key>
+    <array>
+      <string>inadco.com</string>
+      <string>inad.co</string>
+      <string>quickenloans.com.com</string>
+    </array>
+    <key>supported-devices</key>
+    <array>
+      <string>iPhone</string>
+      <string>iPod</string>
+    </array>
+    <key>manifests</key>
+    <dict>
+      <key>iPhone</key>
+      <string>WebArchive.manifest</string>
+      <key>iPod</key>
+      <string>WebArchive.manifest</string>
+    </dict>
+
+    <!-- section: creatives. -->
+    <key>creatives</key>
+    <dict>
+      <key>basic-iphone</key>
+      <dict>
+        <key>enable-apple-branding</key>
+        <true/>
+        <key>creative-type</key>
+        <string>standard</string>
+        <key>supported-devices</key>
+        <array>
+          <string>iPhone</string>
+          <string>iPod</string>
+        </array>
+      </dict>
+    </dict>
+
+  </dict>
+</plist>
+

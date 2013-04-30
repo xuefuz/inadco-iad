@@ -1,0 +1,28 @@
+<!doctype html>
+<!--
+  *
+  * Copyright © 2009, 2010 Apple Inc.  All rights reserved.
+  *
+-->
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+  <p>whitelist: macys.com</p>
+  Buy <a href="http://www1.macys.com/search/index.ognc?SearchTarget=*&Keyword=480371&KEYWORD_GO_BUTTON.x=0&KEYWORD_GO_BUTTON.y=0&KEYWORD_GO_BUTTON=KEYWORD_GO_BUTTON" target="_blank">Bootcut denim jeans</a><br><br>
+  Buy <a href="http://www1.macys.com/search/index.ognc?SearchTarget=*&Keyword=340287&KEYWORD_GO_BUTTON.x=0&KEYWORD_GO_BUTTON.y=0&KEYWORD_GO_BUTTON=KEYWORD_GO_BUTTON%5C" target="_blank">Chocura trail boot</a><br><br>
+  <p>whitelist: nytimes.com</p>
+  Go to <a href="http://video.nytimes.com" target="_blank">video.nytimes.com</a><br><br>
+  Go to <a href="http://global.nytimes.com" target="_blank">global.nytimes.com</a><br><br>
+  <p>whitelist: developer.apple.com</p>
+  Go to <a href="http://developer.apple.com" target="_blank">developer.apple.com</a><br><br>
+  Go to <a href="https://developer.apple.com" target="_blank">https://developer.apple.com</a><br><br>
+  Go to <a href="http://www.apple.com" target="_blank">www.apple.com</a> in Mobile Safari<br><br>
+  <p>whitelist: NIL</p>
+  Go to <a href="http://www.cnn.com" target="_blank">www.cnn.com</a>
+  <p>go to app</p>
+  Go to <a href="fandango://" target="_blank">fandango://</a>
+</body>
+</html>

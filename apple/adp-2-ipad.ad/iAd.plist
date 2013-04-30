@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>version</key>
+    <string>3.0</string>
+    <key>content-scalable</key>
+    <true/>
+    <key>require-session-id</key> 
+    <true/>
+    <key>ad-type</key>
+    <string>rich</string>
+    <key>background-color</key>
+    <string>333333</string>
+    <key>action</key>
+    <string>landing-page</string>
+    <!-- section: differentiated setup for iOS devices. -->
+    <key>initial-orientation</key>
+    <dict>
+      <key>iPad</key>
+      <string>portrait</string>
+    </dict>
+    <key>supported-orientations</key>
+    <dict>
+      <key>iPad</key>
+      <string>portrait</string>
+    </dict>
+    <key>scrolling</key>
+    <false/>
+    <key>accessibility-description</key>
+    <string>Form Proxy Test</string>
+    <key>name</key>
+    <string>Inadco ADP Test -- iPad</string>
+    <key>external-domains</key>
+    <array>
+      <string>inadco.com</string>
+      <string>inad.co</string>
+      <string>adp.com</string>
+    </array>
+    <key>supported-devices</key>
+    <array>
+      <string>iPad</string>
+    </array>
+    <key>manifests</key>
+    <dict>
+      <key>iPad@2x</key>
+      <string>WebArchive.manifest</string>
+      <key>iPad</key>
+      <string>WebArchive.manifest</string>
+    </dict>
+	
+    <!-- section: creatives. -->
+    <key>creatives</key>
+    <dict>
+      <key>basic-ipad</key>
+      <dict>
+        <key>enable-apple-branding</key>
+        <true/>
+        <key>creative-type</key>
+        <string>standard</string>
+        <key>transition-type</key>
+        <string>slide</string>
+        <key>supported-devices</key>
+        <array>
+          <string>iPad</string>
+        </array>
+      </dict>
+    </dict>
+  </dict>
+</plist>
+

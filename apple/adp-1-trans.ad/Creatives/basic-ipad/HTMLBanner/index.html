@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <style>
+      /* shared ------------------------------------------------------------------------ */
+      body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        top:0px;
+        left: 0px;
+        background: #000;
+        font:20px/22px "Helvetica";
+        text-align:center;
+      }
+
+      body div{
+        position: absolute;
+        background-size: 100% 100%;
+      }
+
+      #portrait,
+      #landscape {
+        position: relative;
+        background: white;
+        overflow: hidden;
+      }
+      
+      @media screen and (min-width: 0px) and (max-width:768px){
+        #portrait { display: block; }
+        #landscape { display: none; }
+      }
+
+      @media screen and (min-width: 769px) and (max-width:1024px){
+        #landscape { display: block; }
+        #portrait { display: none; }
+      }
+      
+      /* portrait ---------------------------------------------------------------------- */
+      #portrait {
+        width: 768px;
+        height: 66px;
+      }
+
+      /* landscape --------------------------------------------------------------------- */
+      #landscape {
+        width: 1024px;
+        height: 66px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="portrait">
+      <img src="img/banner_port.jpg"width="768" height="66"/> 
+    </div>
+    <div id="landscape">
+      <img src="img/banner_port.jpg"width="1024" height="66"/> 
+    </div>
+  </body>
+</html>

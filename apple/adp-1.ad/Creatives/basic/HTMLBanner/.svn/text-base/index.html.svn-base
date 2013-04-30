@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+     <meta name="viewport" content="width=device-width, user-scalable=no">
+  	<title></title>
+  	<style type="text/css" media="screen">
+  		body {
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+			top:0px;
+			left: 0px;
+			width:320px;
+			height:50px;
+			background: #fff;
+		}
+		
+		body.landscape {
+			width: 480px;
+			height: 32px;
+		}
+		
+		.landscape #portrait,
+		#landscape {
+			display: none;
+		}
+		
+		.landscape #landscape {
+			display: block;
+		}
+
+		@media screen and (max-height: 40px) {
+			body {
+				width: 480px;
+				height: 32px;
+			}
+			#portrait {
+				display: none;
+			}
+			#landscape {
+				display: block;
+			}
+		}
+  	</style>
+  	<script>
+      function updateOrientation(orientation){
+        console.log("Updating orientation, value is " + orientation);
+         switch(orientation){
+
+            case 0:
+            case 1:
+            case 2:
+            case 180:
+                  document.body.setAttribute("class","");
+                  break; 
+
+            case 3:
+            case 4:
+            case 90:
+            case -90: 
+                  document.body.setAttribute("class","landscape");
+                  break;
+
+         }
+      };
+
+      var orientationListener = {
+        deviceOrientationDidChange: function(code) {
+          console.log("saw window.ad.deviceOrientationDidChange");
+          updateOrientation(code);
+        }
+      };
+
+      if ('ad' in window) {
+        window.ad.deviceOrientationListener = orientationListener;
+      }
+
+      window.onload = function () {
+        console.log("ad is loaded");
+        if ('orientation' in window) {
+          console.log("updating window.orientation");
+          updateOrientation(window.orientation);
+        }
+      };
+      
+      window.onorientationchange = function () {
+        console.log("noticed orientation change on window.orientation");
+        updateOrientation(window.orientation);
+      };
+      
+    </script>
+  </head>
+  <body class="">
+	<div id="portrait">
+    YouTube Demo iAd - Portrait
+	</div>
+	<div id="landscape">
+    YouTube Demo iAd - Landscape
+	</div>
+  </body>
+</html>

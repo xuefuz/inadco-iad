@@ -1,0 +1,193 @@
+/*
+File: iAd.Ext.css
+
+Abstract: iAd JS Extensions CSS. 
+
+Version: 1.2.0-stage
+
+Disclaimer: IMPORTANT:  This Apple software is supplied to you by Apple 
+Inc. ("Apple") in consideration of your agreement to the following 
+terms, and your use, installation, modification or redistribution of 
+this Apple software constitutes acceptance of these terms.  If you do 
+not agree with these terms, please do not use, install, modify or 
+redistribute this Apple software. 
+
+In consideration of your agreement to abide by the following terms, and 
+subject to these terms, Apple grants you a personal, non-exclusive 
+license, under Apple's copyrights in this original Apple software (the 
+"Apple Software"), to use, reproduce, modify and redistribute the Apple 
+Software, with or without modifications, in source and/or binary forms; 
+provided that if you redistribute the Apple Software in its entirety and 
+without modifications, you must retain this notice and the following 
+text and disclaimers in all such redistributions of the Apple Software. 
+Neither the name, trademarks, service marks or logos of Apple Inc. may 
+be used to endorse or promote products derived from the Apple Software 
+without specific prior written permission from Apple.  Except as 
+expressly stated in this notice, no other rights or licenses, express or 
+implied, are granted by Apple herein, including but not limited to any 
+patent rights that may be infringed by your derivative works or by other 
+works in which the Apple Software may be incorporated. 
+
+The Apple Software is provided by Apple on an "AS IS" basis.  APPLE 
+MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION 
+THE IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS 
+FOR A PARTICULAR PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND 
+OPERATION ALONE OR IN COMBINATION WITH YOUR PRODUCTS. 
+
+IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL 
+OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION, 
+MODIFICATION AND/OR DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED 
+AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE), 
+STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE 
+POSSIBILITY OF SUCH DAMAGE. 
+
+Copyright (C) 2012 Apple Inc. All Rights Reserved. 
+
+*/
+#ad-ext-video {
+  position: absolute;
+  left: 0px;
+  width: 320px;
+  height: 480px;
+  z-index: 10;
+}
+
+#ad-ext-video.inline-video {
+  top: 0px;
+}
+
+#ad-ext-video.fullscreen-video {
+  top: -10000px;
+}
+
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, 
+blockquote, a, abbr, acronym, address, cite, em, 
+img, q, strong, sub, sup, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, 
+tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  list-style: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Fixes issue with iPad turning off hardware acceleration on input focus */
+input {
+  outline: 0;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 480px;
+  background: #000;
+  font: 16px/16px "Helvetica";
+  overflow: hidden;
+}
+
+#root {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 320px;
+  height: 480px;
+  background: #777;
+  overflow: hidden;  
+}
+
+.content-view {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 320px;
+  height: 480px;
+}
+
+body.ad-device-landscape,
+body.ad-device-landscape #root,
+body.ad-device-landscape .content-view {
+  width: 480px;
+  height: 320px;
+}
+
+body.ad-iPad,
+body.ad-iPad #root,
+body.ad-iPad .content-view  {
+  width: 768px;
+  height: 1024px;
+}
+
+body.ad-iPad.ad-device-landscape, 
+body.ad-iPad.ad-device-landscape #root,
+body.ad-iPad.ad-device-landscape .content-view {
+  width: 1024px;
+  height: 768px;
+}
+
+.bs {
+  -webkit-mask-size: 100% 100%;
+  background-size: 100% 100%;  
+  position: absolute;
+}
+.ad-ext-map-view > object {
+  width: 100%;
+  height: 100%;
+}
+
+.ad-ext-map-view .olControlAttribution {
+  bottom: 0px !important;
+}
+
+.ad-ext-map-view .browserShimPopupContent {
+  padding: 0px 4px 0px 4px;
+}
+
+.ad-ext-map-view .browserShimPopupContent.leftCallout {
+  padding: 0px 4px 0px 30px;
+}
+
+.ad-ext-map-view .browserShimPopupContent.rightCallout {
+  padding: 0px 30px 0px 4px;
+}
+
+.ad-ext-map-view .browserShimPopupContent > h2 {
+  font-size: 14px !important;
+  width: 120px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.ad-ext-map-view .browserShimPopupContent p {
+  font-size: 10px;
+  color: #000;
+  width: 120px;
+}
+
+.ad-ext-map-view .leftCalloutButton {
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  width: 30px;
+  height: 30px;
+}
+
+.ad-ext-map-view .rightCalloutButton {
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  width: 30px;
+  height: 30px;
+}
